@@ -16,7 +16,7 @@ module.exports = {
   /*
   * The MongoDB URL
   * */
-  MONGO_URI: process.env.MONGOLAB_URI || process.env.MONGO_URI || 'localhost',
+  MONGO_URI: "mongodb://austinridesharing:austinridesharing@ds023432.mlab.com:23432/austinridesharing",
 
   /*
   * The Facebook App Secret.
