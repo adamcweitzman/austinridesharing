@@ -4,8 +4,10 @@ var mongoose = require('mongoose');
 var userSchema = new mongoose.Schema({
   email: { type: String, unique: true, lowercase: true },
   password: { type: String, select: false },
-  displayName: String,
+  name: String,
   picture: String,
+  car: { make: String, model: String, year: String},
+  availability: Boolean,
   facebook: String,
   google: String,
   twitter: String,

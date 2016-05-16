@@ -16,7 +16,7 @@ angular.module('myApp', [
   'myApp.home'
 ])
 
-  .config(function($stateProvider, $mdThemingProvider, $urlRouterProvider, $authProvider) {
+  .config(function($stateProvider, $mdThemingProvider, $urlRouterProvider, $authProvider, $locationProvider) {
     $mdThemingProvider.theme('default')
       .primaryPalette('blue')
       .accentPalette('grey');

@@ -42,6 +42,42 @@
             </div>
           </md-input-container>
           <md-input-container class="md-icon-float">
+            <label>Picture</label>
+            <md-icon>picture</md-icon>
+            <input ng-model="email" name="picture" type="picture">
+            <div ng-messages="signupForm.email.$error" ng-show="signupForm.email.$touched || signupForm.$submitted">
+              <div ng-message="required">Your picture goes here</div>
+              <div ng-message="pattern">Your picture goes here</div>
+            </div>
+          </md-input-container>
+          <md-input-container class="md-icon-float">
+            <label>Car Make</label>
+            <md-icon>motorcycle</md-icon>
+            <input ng-model="carMake" name="carMake" type="carMake"> 
+            <div ng-messages="signupForm.email.$error" ng-show="signupForm.email.$touched || signupForm.$submitted">
+              <div ng-message="required">The make of your car goes here</div>
+              <div ng-message="pattern">Your car make is invalid.</div>
+            </div>
+          </md-input-container>
+          <md-input-container class="md-icon-float">
+            <label>Car Model</label>
+            <md-icon>motorcycle</md-icon>
+            <input ng-model="carModel" name="carModel" type="carModel"> 
+            <div ng-messages="signupForm.email.$error" ng-show="signupForm.email.$touched || signupForm.$submitted">
+              <div ng-message="required">The make of your car goes here</div>
+              <div ng-message="pattern">Your car make is invalid.</div>
+            </div>
+          </md-input-container>
+          <md-input-container class="md-icon-float">
+            <label>Car Year</label>
+            <md-icon>motorcycle</md-icon>
+            <input ng-model="carYear" name="carYear" type="carYear"> 
+            <div ng-messages="signupForm.email.$error" ng-show="signupForm.email.$touched || signupForm.$submitted">
+              <div ng-message="required">The make of your car goes here</div>
+              <div ng-message="pattern">Your car make is invalid.</div>
+            </div>
+          </md-input-container>
+          <md-input-container class="md-icon-float">
             <label>Password</label>
             <md-icon>lock</md-icon>
             <input ng-model="password" name="password" type="password" required>
