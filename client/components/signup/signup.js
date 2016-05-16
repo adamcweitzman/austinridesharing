@@ -20,6 +20,10 @@ angular.module('myApp.signup', [])
       $auth.signup({
         displayName: $scope.displayName,
         email: $scope.email,
+        phone: $scope.phone,
+        carMake: $scope.carMake,
+        carModel: $scope.carModel,
+        carYear: $scope.carYear,
         password: $scope.password
       }).catch(loginErrorHandler);
     };

@@ -37,8 +37,11 @@ router.post('/signup', function(req, res) {
       displayName: req.body.displayName,
       email: req.body.email,
       password: req.body.password,
+      phone: req.body.phone,
       providers: ['local']
     });
+    console.log(req.body.phone);
+    console.log(user);
     user.save(function() {
       res.send({ token: auth.createJWT(user) });
     });

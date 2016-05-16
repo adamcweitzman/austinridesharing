@@ -42,6 +42,15 @@
             </div>
           </md-input-container>
           <md-input-container class="md-icon-float">
+            <label>Phone</label>
+            <md-icon>phone</md-icon>
+            <input ng-model="phone" name="phone" type="phone">
+            <div ng-messages="signupForm.email.$error" ng-show="signupForm.email.$touched || signupForm.$submitted">
+              <div ng-message="required">Your email adress is required.</div>
+              <div ng-message="pattern">Your email adress is invalid.</div>
+            </div>
+          </md-input-container>
+          <md-input-container class="md-icon-float">
             <label>Picture</label>
             <md-icon>picture</md-icon>
             <input ng-model="email" name="picture" type="picture">

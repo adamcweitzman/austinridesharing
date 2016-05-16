@@ -29,6 +29,12 @@ router.put('/me', auth.ensureAuthenticated, function(req, res) {
     }
     user.displayName = req.body.displayName || user.displayName;
     user.email = req.body.email || user.email;
+    user.name = req.body.name || user.name;
+    user.picture = req.body.picture || user.picture;
+    user.car.make = req.body.carMake || user.carMake;
+    user.car.model = req.body.carModel || user.carModel;
+    user.car.year = req.body.carYear || user.carYear;
+
     if (newPass) {
       user.password = newPass;
     }
